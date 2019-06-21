@@ -1,0 +1,40 @@
+footer {
+  padding-top: 10px;
+  background-color: black;
+  color: white;
+
+  li {
+    padding: 5px 0;
+  }
+}
+
+/* Footer Navigation */
+.footer-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Social Navigation */
+.social-nav {
+  list-style: none;
+  margin: 15px 0;
+  padding: 0;
+
+  li {
+    display: inline;
+    padding-right: 15px;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .footer-li {
+    display: inline;
+    vertical-align: middle;
+    padding: 5px 0;
+  }
+
+  .footer-li + .footer-li:before{
+    content: " | ";
+  }
+}

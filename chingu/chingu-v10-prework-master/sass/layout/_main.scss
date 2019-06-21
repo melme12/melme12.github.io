@@ -1,0 +1,37 @@
+.download-box {
+  padding: 30px 0;
+
+  img {
+    display: none;
+  }
+}
+
+.download-p {
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 1041px) {
+  .download-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+       -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-line-pack: start;
+         align-content: flex-start;
+
+    img {
+      display: block;
+      width: auto;
+      margin-right: 70px;
+      -webkit-box-shadow: 0 0 7px #6d6d6d;
+            box-shadow: 0 0 7px #6d6d6d;
+    }
+  }
+
+  .text-box {
+    width: 70%;
+  }
+}

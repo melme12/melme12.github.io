@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <title>Taking control - Lloyd's - The world’s specialist insurance market. Also known as Lloyd's of London; is a market where members join together as syndicates to insure risks.</title>
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+
+    <!-- __________ START navigation __________ -->
+    
+    <!-- mobile top nav: logo and icons -->
+    <nav class="mobile-nav-box toggle-on-desktop">
+      <a class ="logo" href="https://www.lloyds.com/">LLOYD'S</a>
+      <ul class="mobile-nav">
+        <li><a href="https://www.lloyds.com/Account/Login"><img class="menu-icon" src="assets/icons/iconmonstr-user-7-48.png" /></a></li>
+        <li><a href="#"><img class="menu-icon" src="assets/icons/iconmonstr-magnifier-6-48.png" /></a></li>
+        <li><img class="menu-icon" onclick="showHam()" src="assets/icons/iconmonstr-menu-1-48.png" /></li>
+      </ul>
+    </nav>
+
+    <!-- mobile dropdown menu: hidden on default and will open with click on hamburger menu-->
+    <nav class="toggle-on-desktop">
+      <ul id="main-menu" class="show">
+
+        <li class="blue-li-inactive" id="blue-grey-li-1">
+          <a id="blue-li-a-1" href="https://www.lloyds.com/news-and-risk-insight">News and risk insight</a>
+          <span class="bg-plus" id="icon1" onclick="showSub1('sub-menu-1', 'show1'); changeIcon('icon1', 'blue-grey-li-1');">
+          </span>
+        </li><!--opens first submenu-->
+        <li>
+          <ul id="sub-menu-1" class="show1">
+            <li class="gray-li">
+              <a href="https://www.lloyds.com/news-and-risk-insight/press-releases">Press releases</a>
+            </li>
+            <li class="gray-li">
+              <a href="https://www.lloyds.com/news-and-risk-insight/news">News</a>
+            </li>
+            <li class="gray-li">
+                <a href="https://www.lloyds.com/news-and-risk-insight/risk-reports">Risk reports</a>
+            </li>
+            <li class="gray-li">
+              <a href="https://www.lloyds.com/events">Events</a>
+            </li>  
+            <li class="gray-li">
+              <a href="https://www.lloydsbrussels.com/">Lloyd’s subsidiary in Brussels</a>
+            </li>
+            <li class="gray-li">
+              <a href="https://www.lloydslab.com/">Lloyd's Lab</a>
+            </li>
+            <li class="gray-li">
+              <a href="https://www.lloyds.com/cityriskindex/">City Risk Index</a>
+            </li>
+            <li class="gray-li">
+              <a href="https://www.lloyds.com/news-and-risk-insight/consumer-alerts">Consumer alerts</a>
+            </li>
+            <li class="gray-li">
+              <a href="https://www.lloyds.com/news-and-risk-insight/media-centre">Media centre</a>
+            </li>
+            <li class="gray-li">
+              <a href="https://futureat.lloyds.com/propsectus">Future at Lloyd's</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="blue-li-inactive" id="blue-grey-li-2">
+          <a id="blue-li-a-2" href="https://www.lloyds.com/market-directory">Market directory</a>
+          <span class="bg-plus" id="icon2" onclick="showSub1('sub-menu-2', 'show2'); changeIcon('icon2', 'blue-grey-li-2') "></span>
+        </li><!--opens second submenu-->
+        <li>
+          <ul id="sub-menu-2" class="show2">
+            <li class="gray-li">
+              <a href="https://www.lloyds.com/the-market/directories/results?mode=bro&cobc=0&cob=&bro_num=&pseudo=&name=&loc=&bro=1&cov=0&man=0&mem=0&omc=0&run=0">Brokers</a>
+            </li>
+            <li class="gray-li">
+                <a href="https://www.lloyds.com/the-market/directories/results?mode=bro&cobc=0&cob=&bro_num=&pseudo=&name=&loc=&bro=0&cov=1&man=0&mem=0&omc=0&run=0">Coverholders</a>
+            </li>
+            <li class="gray-li">
+              <a href="https://www.lloyds.com/the-market/directories/results?mode=bro&cobc=0&cob=&name=&ltti=&fca_num=&loc=&bro=0&cov=0&man=1&mem=0&omc=0&run=0">Managing agents</a>
+            </li>
+            <li class="gray-li">
+              <a href="https://www.lloyds.com/the-market/directories/results?mode=man&cobc=0&cob=&name=&syn_num=&loc=&bro=0&cov=0&man=0&mem=1&omc=0&run=0">Members’ agents</a>
+            </li>
+            <li class="gray-li">
+              <a href="https://www.lloyds.com/the-market/directories/results?mode=mem&name=&loc=&bro=0&cov=0&man=0&mem=0&omc=1&run=0">Open Market Correspondents</a>
+            </li>
+            <li class="gray-li">
+              <a href="https://www.lloyds.com/the-market/directories/results?mode=omc&name=&loc=&bro=0&cov=0&man=0&mem=0&omc=0&run=1">Run off brokers</a>
+            </li>
+            <li class="gray-li">
+              <a href="https://www.lloyds.com/market-directory/committees-,-a-,-associations">Committees and associations</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="blue-li-inactive" id="blue-grey-li-3">
+          <a id="blue-li-a-3" href="https://www.lloyds.com/market-resources">Market resources</a>
+          <span class="bg-plus" id="icon3" onclick="showSub1('sub-menu-3', 'show3'); changeIcon('icon3', 'blue-grey-li-3') "></span>
+        </li><!--opens third submenu-->
+        <li>
+          <ul id="sub-menu-3" class="show3">          
+            <li class="gray-li">
+              <a href="https://www.lloyds.com/market-resources/capital-and-reserving">Capital and reserving</a>
+            </li>
+            <li class="gray-li">
+              <a href="https://www.lloyds.com/market-resources/claims">Claims</a>
+            </li>
+            <li class="gray-li">
+              <a href="https://www.lloyds.com/market-resources/complaints">Complaints</a>
+            </li>
+            <li class="gray-li">
+              <a href="https://www.lloyds.com/market-resources/data-and-research">Data and research</a>
+            </li>
+            <li class="gray-li">
+              <a href="https://www.lloyds.com/market-resources/delegated-authorities">Delegated Authorities</a>
+            </li>
+            <li class="gray-li">
+              <a href="https://www.lloyds.com/market-resources/finance-and-investment">Finance and investment</a>
+            </li>
+            <li class="gray-li">
+              <a href="https://www.lloyds.com/market-resources/lloyds-agency">Lloyd’s Agency</a>
+            </li>
+            <li class="gray-li">
+              <a href="https://www.lloyds.com/market-resources/market-communications">Market communications</a>
+            </li>
+            <li class="gray-li">
+              <a href="https://www.lloyds.com/market-resources/market-services">Market services</a>
+            </li>
+            <li class="gray-li">
+              <a href="https://www.lloyds.com/market-resources/professional-development">Professional development</a>
+            </li>
+            <li class="gray-li">
+              <a href="https://www.lloyds.com/market-resources/regulatory">Regulatory</a>
+            </li>
+            <li class="gray-li">
+              <a href="https://www.lloyds.com/market-resources/requirements-and-standards">Requirements and standards</a>
+            </li>
+            <li class="gray-li">
+              <a href="https://www.lloyds.com/market-resources/tax">Tax</a>
+            </li>
+            <li class="gray-li">
+              <a href="https://www.lloyds.com/market-resources/underwriting">Underwriting</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="blue-li-inactive" id="blue-grey-li-4">
+            <a id="blue-li-a-4" href="https://www.lloyds.com/tools-and-systems">Tools and systems</a>
+            <span class="bg-plus" id="icon4" onclick="showSub1('sub-menu-4', 'show4'); changeIcon('icon4', 'blue-grey-li-4') "></span>
+          </li><!--opens fourth submenu-->
+          <li>
+            <ul id="sub-menu-4" class="show4">
+              <li class="gray-li">
+                <a href="https://www.lloyds.com/market-resources/delegated-authorities/systems-and-tools/aims">AiMS</a>
+              </li>
+              <li class="gray-li">
+                <a href="https://www.lloyds.com/market-resources/delegated-authorities/systems-and-tools/atlas">Atlas</a>
+              </li>
+              <li class="gray-li">
+                <a href="https://www.lloyds.com/market-resources/delegated-authorities/systems-and-tools/bars">Binding Authority Registration</a>
+              </li>
+              <li class="gray-li">
+                <a href="https://www.lloyds.com/tools-and-systems/business-timetable">Business timetable</a>
+              </li>
+              <li class="gray-li">
+                <a href="https://www.lloyds.com/market-resources/delegated-authorities/systems-and-tools/chorus">Chorus</a>
+              </li>
+              <li class="gray-li">
+                <a href="https://www.lloyds.com/tools-and-systems/core-market-returns-cmr">Core Market Returns</a>
+              </li>
+              <li class="gray-li">
+                <a href="https://www.lloyds.com/tools-and-systems/crystal">Crystal</a>
+              </li>
+              <li class="gray-li">
+                <a href="https://www.lloyds.com/tools-and-systems/doprint">Doprint</a>
+              </li>
+              <li class="gray-li">
+                <a href="https://www.lloyds.com/market-resources/market-services/useful-information/funds-at-lloyds">Funds at Lloyd's</a>
+              </li>
+              <li class="gray-li">
+                <a href="https://www.lloyds.com/lloyds-around-the-world/americas/canada/lineage-and-accounting-and-settlement">Lineage</a>
+              </li>
+              <li class="gray-li">
+                <a href="https://www.lloyds.com/tools-and-systems/lloyds-wordings-repository">Lloyd's wordings repository</a>
+              </li>
+              <li class="gray-li">
+                <a href="https://www.lloyds.com/tools-and-systems/member-modelling-software">Member modelling software</a>
+              </li>
+              <li class="gray-li">
+                <a href="https://www.lloyds.com/tools-and-systems/mocha">Mocha</a>
+              </li>
+              <li class="gray-li">
+                <a href="https://www.lloyds.com/tools-and-systems/quality-assurance-qa-tools">Quality assurance tools</a>
+              </li>
+              <li class="gray-li">
+                <a href="https://www.lloyds.com/tools-and-systems/risk-locator">Risk locator</a>
+              </li>
+              <li class="gray-li">
+                <a href="https://www.lloyds.com/tools-and-systems/secure-store">Secure store</a>
+              </li>
+              <li class="gray-li">
+                <a href="https://www.lloyds.com/tools-and-systems/workbench">Workbench</a>
+              </li>
+            </ul>
+          </li>
+
+        <li class="blue-li-inactive" id="blue-grey-li-5">
+            <a id="blue-li-a-5" href="https://www.lloyds.com/lloyds-around-the-world">Lloyd's around the world</a>
+            <span class="bg-plus" id="icon5" onclick="showSub1('sub-menu-5', 'show5'); changeIcon('icon5') "></span>
+          </li><!--opens fifth submenu-->
+          <li>
+            <ul id="sub-menu-5" class="show5">
+              <li class="lightblue-li">Africa & Middle-East</li>
+              <li class="gray-li">
+                <a href="https://www.lloyds.com/lloyds-around-the-world/asia/dubai">Dubai</a>
+              </li>
+              <li class="gray-li">
+                <a href="https://www.lloyds.com/lloyds-around-the-world/africa/maroc">Maroc</a>
+              </li>
+              <li class="gray-li">
+                <a href="https://www.lloyds.com/lloyds-around-the-world/africa/namibia">Namibia</a>
+              </li>
+              <li class="gray-li">
+                <a href="https://www.lloyds.com/lloyds-around-the-world/africa/south-africa">South Africa</a>
+              </li>
+              <li class="gray-li">
+                <a href="https://www.lloyds.com/lloyds-around-the-world/africa/zimbabwe">Zimbabwe</a>
+              </li>
+              <li class="lightblue-li">Americas</li>
+              <li class="gray-li">
+                <a href="https://www.lloyds.com/lloyds-around-the-world/americas/argentina">Argentina</a>
+              </li>
+              <li class="gray-li">
+                <a href="https://www.lloyds.com/lloyds-around-the-world/americas/brazil-em-portugues">Brazil</a>
+              </li>
+              <li class="gray-li">
+                <a href="https://www.lloyds.com/lloyds-around-the-world/americas/canada-french-version">Canada</a>
+              </li>
+              <li class="gray-li">
+                <a href="https://www.lloyds.com/lloyds-around-the-world/americas/colombia_esp">Colombia</a>
+              </li>
+              <li class="gray-li">
+                <a href="https://www.lloyds.com/lloyds-around-the-world/americas/mexico">Mexico</a>
+              </li>
+              <li class="gray-li">
+                <a href="https://www.lloyds.com/lloyds-around-the-world/americas/us-homepage">United States of America</a>
+              </li>
+              <li class="lightblue-li">Asia & Pacific</li>
+              <li class="gray-li">
+                <a href="https://www.lloyds.com/lloyds-around-the-world/australasia/australia">Australia</a>
+              </li>
+              <li class="gray-li">
+                <a href="https://www.lloyds.com/lloyds-around-the-world/asia/china">China</a>
+              </li>
+              <li class="gray-li">
+                <a href="https://www.lloyds.com/lloyds-around-the-world/asia/hong-kong">Hong Kong</a>
+              </li>
+              <li class="gray-li">
+                <a href="https://www.lloyds.com/lloyds-around-the-world/asia/india">India</a>
+              </li>
+              <li class="gray-li">
+                    <a href="https://www.lloyds.com/lloyds-around-the-world/asia/japan">Japan</a>
+              </li>
+              <li class="gray-li">
+                <a href="https://www.lloyds.com/lloyds-around-the-world/australasia/new-zealand">New Zealand</a>
+              </li>
+              <li class="gray-li">
+                <a href="https://www.lloyds.com/lloyds-around-the-world/asia/singapore">Singapore</a>
+              </li>
+              <li class="lightblue-li">Europe</li>
+              <li class="gray-li">
+                <a href="https://www.lloyds.com/lloyds-around-the-world/europe/osterreich-auf-deutsch">Austria</a>
+              </li>
+              <li class="gray-li">
+                <a href="https://www.lloyds.com/redirect-pages/brussels">Brussels European HQ</a>
+              </li>
+              <li class="gray-li">
+                <a href="https://www.lloyds.com/lloyds-around-the-world/europe/nordics">Denmark</a>
+              </li>
+              <li class="gray-li">
+                <a href="https://www.lloyds.com/lloyds-around-the-world/europe/le-lloyds-en-france">France</a>
+              </li>
+              <li class="gray-li">
+                    <a href="https://www.lloyds.com/lloyds-around-the-world/europe/deutschland">Germany</a>
+              </li>
+              <li class="gray-li">
+                <a href="https://www.lloyds.com/lloyds-around-the-world/europe/israel">Israel</a>
+              </li>
+              <li class="gray-li">
+                <a href="https://www.lloyds.com/lloyds-around-the-world/europe/italia">Italy</a>
+              </li>
+              <li class="gray-li">
+                <a href="https://www.lloyds.com/lloyds-around-the-world/europe/lithuania">Lithuania</a>
+              </li>
+              <li class="gray-li">
+                <a href="https://www.lloyds.com/lloyds-around-the-world/europe/malta">Malta</a>
+              </li>
+              <li class="gray-li">
+                <a href="https://www.lloyds.com/lloyds-around-the-world/europe/nederland">Netherlands</a>
+              </li>
+              <li class="gray-li">
+                <a href="https://www.lloyds.com/lloyds-around-the-world/europe/nordics">Norway</a>
+              </li>
+              <li class="gray-li">
+                <a href="https://www.lloyds.com/lloyds-around-the-world/europe/polska">Poland</a>
+              </li>
+              <li class="gray-li">
+                <a href="https://www.lloyds.com/lloyds-around-the-world/europe/espana">Spain</a>
+              </li>
+              <li class="gray-li">
+                <a href="https://www.lloyds.com/lloyds-around-the-world/europe/nordics">Sweden</a>
+              </li>
+              <li class="gray-li">
+                <a href="https://www.lloyds.com/lloyds-around-the-world/europe/die-schweiz-auf-deutsch">Switzerland</a>
+              </li>
+              <li class="gray-li">
+                <a href="https://www.lloyds.com/lloyds-around-the-world/europe/uk">United Kingdom</a>
+              </li>
+              <li class="lightblue-li"></li>
+            </ul>
+          </li>
+          
+        <li class="white-li">
+          <a href="https://www.lloyds.com/about-lloyds">About</a>
+        </li>
+        <li class="white-li">
+          <a class="white-li" href="https://www.lloyds.com/about-lloyds/value_proposition_broker">Brokers</a>
+        </li>
+        <li class="white-li">
+          <a class="white-li" href="https://www.lloyds.com/about-lloyds/value_proposition_coverholder">Coverholders</a>
+        </li>
+        <li class="white-li">
+          <a class="white-li" href="https://www.lloyds.com/about-lloyds/value_proposition_insurer">Insurer</a>
+        </li>
+        <li class="white-li">
+          <a class="white-li" href="https://www.lloyds.com/policyholder">Policyholders</a>
+        </li>
+        <li class="white-li">
+          <a class="white-li" href="https://www.lloyds.com/careers">Careers</a>
+        </li>
+        <li class="white-li">
+          <a class="white-li" href="https://www.lloyds.com/investor-relations">Investor Relations</a>
+        </li>
+        <li class="white-li">
+          <a class="white-li" href="https://www.lloyds.com/contact-us">Contact</a>
+        </li>
+        <li class="white-li">
+          <a class="white-li" href="https://www.lloyds.com/Account/Login">Login/register</a>
+        </li>        
+      </ul>
+    </nav>
+    
+    <!-- ______ Desktop Navigation ______ -->
+
+    <!-- desktop logo and light top menu -->
+    <nav class="toggle-on-mobile first-nav-row">
+      <a class ="logo" href="https://www.lloyds.com/">LLOYD'S</a>
+      <ul id="top-desktop-nav">
+        <li class="top-nav-li"><a href="https://www.lloyds.com/about-lloyds">About</a></li>
+        <li class="top-nav-li"><a href="https://www.lloyds.com/about-lloyds/value_proposition_broker">Brokers</a></li>
+        <li class="top-nav-li"><a href="https://www.lloyds.com/about-lloyds/value_proposition_coverholder">Coverholders</a></li>
+        <li class="top-nav-li"><a href="https://www.lloyds.com/about-lloyds/value_proposition_insurer">Insurer</a></li>
+        <li class="top-nav-li"><a href="https://www.lloyds.com/policyholder">Policyholders</a></li>
+        <li class="top-nav-li"><a href="https://www.lloyds.com/careers">Careers</a></li>
+        <li class="top-nav-li"><a href="https://www.lloyds.com/investor-relations">Investor Relations</a></li>
+        <li class="top-nav-li"><a href="https://www.lloyds.com/contact-us">Contact</a></li>
+        <li class="top-nav-li"><a href="https://www.lloyds.com/Account/Login">Login/register</a></li>
+        <li class="input-li" style="position: relative;">
+          <input class="search-field" type="search" placeholder="Search">
+          <input class="search-icon" type="submit" value="">
+        </li>
+      </ul>
+    </nav>
+
+    <!-- desktop second navigation row -->
+    <nav class="toggle-on-mobile second-nav-row">
+      <ul id="second-desktop-nav">
+
+        <li class="desk-first-nav" onmouseover="showSub('desk-first-nav-sub')" onmouseout="hideSub('desk-first-nav-sub')">
+          <a href="https://www.lloyds.com/news-and-risk-insight">News and risk insight</a>
+        </li>
+
+        <li class="desk-other-nav" onmouseover="showSub('desk-second-nav-sub')" onmouseout="hideSub('desk-second-nav-sub')">
+          <a href="https://www.lloyds.com/market-directory">Market directory</a>
+        </li>
+
+        <li class="desk-other-nav" onmouseover="showSub('desk-third-nav-sub')" onmouseout="hideSub('desk-third-nav-sub')">
+          <a href="https://www.lloyds.com/market-resources">Market resources</a>
+        </li>
+
+        <li class="desk-other-nav" onmouseover="showSub('desk-fourth-nav-sub')" onmouseout="hideSub('desk-fourth-nav-sub')">
+          <a href="https://www.lloyds.com/tools-and-systems">Tools and systems</a>
+        </li>
+
+        <li class="desk-other-nav last-li" onmouseover="showSub('desk-fifth-nav-sub')" onmouseout="hideSub('desk-fifth-nav-sub')">
+          <a href="https://www.lloyds.com/lloyds-around-the-world">Lloyd's around the world</a>
+        </li>
+        
+      </ul>
+    </nav>
+    
+    <!-- desktop dropdown nav: show when hovered over first .desk-first-nav-a-->
+    <div id="desk-first-nav-sub" onmouseover="showSub('desk-first-nav-sub')" onmouseout="hideSub('desk-first-nav-sub')">
+      <p>News and risk insight</p>
+      <ul class="hover-sub-nav">
+        <li><a href="https://www.lloyds.com/news-and-risk-insight/press-releases">Press releases</a></li>
+        <li><a href="https://www.lloyds.com/news-and-risk-insight/news">News</a></li>
+        <li><a href="https://www.lloyds.com/news-and-risk-insight/risk-reports">Risk reports</a></li>
+        <li><a href="https://www.lloyds.com/events">Events</a></li>
+        <li><a href="https://www.lloydsbrussels.com/">Lloyd’s subsidiary in Brussels</a></li>
+        <li><a href="https://www.lloydslab.com/">Lloyd's Lab</a></li>
+        <li><a href="https://www.lloyds.com/cityriskindex/">City Risk Index</a></li>
+        <li><a href="https://www.lloyds.com/news-and-risk-insight/consumer-alerts">Consumer alerts</a></li>
+        <li><a href="https://www.lloyds.com/news-and-risk-insight/media-centre">Media centre</a></li>
+        <li><a href="https://futureat.lloyds.com/propsectus">Future at Lloyd's</a></li>
+      </ul>
+    </div>
+
+    <div id="desk-second-nav-sub" onmouseover="showSub('desk-second-nav-sub')" onmouseout="hideSub('desk-second-nav-sub')">
+      <p>Market directory</p>
+      <ul class="hover-sub-nav">
+        <li><a href="https://www.lloyds.com/the-market/directories/results?mode=bro&cobc=0&cob=&bro_num=&pseudo=&name=&loc=&bro=1&cov=0&man=0&mem=0&omc=0&run=0">Brokers</a></li>
+        <li><a href="https://www.lloyds.com/the-market/directories/results?mode=bro&cobc=0&cob=&bro_num=&pseudo=&name=&loc=&bro=0&cov=1&man=0&mem=0&omc=0&run=0">Coverholders</a></li>
+        <li><a href="https://www.lloyds.com/the-market/directories/results?mode=bro&cobc=0&cob=&name=&ltti=&fca_num=&loc=&bro=0&cov=0&man=1&mem=0&omc=0&run=0">Managing agents</a></li>
+        <li><a href="https://www.lloyds.com/the-market/directories/results?mode=man&cobc=0&cob=&name=&syn_num=&loc=&bro=0&cov=0&man=0&mem=1&omc=0&run=0">Members’ agents</a></li>
+        <li><a href="https://www.lloyds.com/the-market/directories/results?mode=mem&name=&loc=&bro=0&cov=0&man=0&mem=0&omc=1&run=0">Open Market Correspondents</a></li>
+        <li><a href="https://www.lloyds.com/the-market/directories/results?mode=omc&name=&loc=&bro=0&cov=0&man=0&mem=0&omc=0&run=1">Run off brokers</a></li>
+        <li><a href="https://www.lloyds.com/market-directory/committees-,-a-,-associations">Committees and associations</a></li>
+      </ul>
+    </div>
+
+      <div id="desk-third-nav-sub" onmouseover="showSub('desk-third-nav-sub')" onmouseout="hideSub('desk-third-nav-sub')">
+        <p>Market resources</p>
+        <ul class="hover-sub-nav">
+          <li><a href="https://www.lloyds.com/market-resources/capital-and-reserving">Capital and reserving</a></li>
+          <li><a href="https://www.lloyds.com/market-resources/claims">Claims</a></li>
+          <li><a href="https://www.lloyds.com/market-resources/complaints">Complaints</a></li>
+          <li><a href="https://www.lloyds.com/market-resources/data-and-research">Data and research</a></li>
+          <li><a href="https://www.lloyds.com/market-resources/delegated-authorities">Delegated Authorities</a></li>
+          <li><a href="https://www.lloyds.com/market-resources/finance-and-investment">Finance and investment</a></li>
+          <li><a href="https://www.lloyds.com/market-resources/lloyds-agency">Lloyd’s Agency</a></li>
+          <li><a href="https://www.lloyds.com/market-resources/market-communications">Market communications</a></li>
+          <li><a href="https://www.lloyds.com/market-resources/market-services">Market services</a></li>
+          <li><a href="https://www.lloyds.com/market-resources/professional-development">Professional development</a></li>
+          <li><a href="https://www.lloyds.com/market-resources/regulatory">Regulatory</a></li>
+          <li><a href="https://www.lloyds.com/market-resources/requirements-and-standards">Requirements and standards</a></li>
+          <li><a href="https://www.lloyds.com/market-resources/tax">Tax</a></li>
+          <li><a href="https://www.lloyds.com/market-resources/underwriting">Underwriting</a></li>
+        </ul>
+      </div>
+          
+      <div id="desk-fourth-nav-sub" onmouseover="showSub('desk-fourth-nav-sub')" onmouseout="hideSub('desk-fourth-nav-sub')">
+        <p>Tools and systems</p>
+        <ul class="hover-sub-nav">
+          <li><a href="https://www.lloyds.com/market-resources/delegated-authorities/systems-and-tools/aims">AiMS</a></li>
+          <li><a href="https://www.lloyds.com/market-resources/delegated-authorities/systems-and-tools/atlas">Atlas</a></li>
+          <li><a href="https://www.lloyds.com/market-resources/delegated-authorities/systems-and-tools/bars">Binding Authority Registration</a></li>
+          <li><a href="https://www.lloyds.com/tools-and-systems/business-timetable">Business timetable</a></li>
+          <li><a href="https://www.lloyds.com/market-resources/delegated-authorities/systems-and-tools/chorus">Chorus</a></li>
+          <li><a href="https://www.lloyds.com/tools-and-systems/core-market-returns-cmr">Core Market Returns</a></li>
+          <li><a href="https://www.lloyds.com/tools-and-systems/crystal">Crystal</a></li>
+          <li><a href="https://www.lloyds.com/tools-and-systems/doprint">Doprint</a></li>
+          <li><a href="https://www.lloyds.com/market-resources/market-services/useful-information/funds-at-lloyds">Funds at Lloyd's</a></li>
+          <li><a href="https://www.lloyds.com/lloyds-around-the-world/americas/canada/lineage-and-accounting-and-settlement">Lineage</a></li>
+          <li><a href="https://www.lloyds.com/tools-and-systems/lloyds-wordings-repository">Lloyd's wordings repository</a></li>
+          <li><a href="https://www.lloyds.com/tools-and-systems/member-modelling-software">Member modelling software</a></li>
+          <li><a href="https://www.lloyds.com/tools-and-systems/mocha">Mocha</a></li>
+          <li><a href="https://www.lloyds.com/tools-and-systems/quality-assurance-qa-tools">Quality assurance tools</a></li>
+          <li><a href="https://www.lloyds.com/tools-and-systems/risk-locator">Risk locator</a></li>
+          <li><a href="https://www.lloyds.com/tools-and-systems/secure-store">Secure store</a></li>
+          <li><a href="https://www.lloyds.com/tools-and-systems/workbench">Workbench</a></li>
+        </ul>
+      </div>
+
+      <div id="desk-fifth-nav-sub" onmouseover="showSub('desk-fifth-nav-sub')" onmouseout="hideSub('desk-fifth-nav-sub')">
+        <p>Lloyd's around the world</p>
+        <div class="fifth-sub-box">
+          <ul class="hover-last-sub-nav">
+            <li onmouseover="showSub('africa')" onmouseout="hideSub('africa')">Africa & Middle-East</li>
+            <li onmouseover="showSub('americas')" onmouseout="hideSub('americas')">Americas</li>
+            <li onmouseover="showSub('asia')" onmouseout="hideSub('asia')">Asia & Pacific</li>
+            <li onmouseover="showSub('europe')" onmouseout="hideSub('europe')">Europe</li>
+          </ul>
+
+          <!--AFRICA add class to be shown /hidden with changeinnerhtml()-->
+          <div id="africa" onmouseover="showSub('africa')" onmouseout="hideSub('africa')">
+            <ul class="country-content">
+              <li><a href="https://www.lloyds.com/lloyds-around-the-world/asia/dubai">Dubai</a></li>
+              <li><a href="https://www.lloyds.com/lloyds-around-the-world/africa/maroc">Maroc</a></li>
+              <li><a href="https://www.lloyds.com/lloyds-around-the-world/africa/namibia">Namibia</a></li>
+              <li><a href="https://www.lloyds.com/lloyds-around-the-world/africa/south-africa">South Africa</a></li>
+              <li><a href="https://www.lloyds.com/lloyds-around-the-world/africa/zimbabwe">Zimbabwe</a></li>
+            </ul>
+          </div>
+          
+          <!--AMERICAS add class to be shown /hidden with changeinnerhtml()-->
+          <div id="americas"  onmouseover="showSub('americas')" onmouseout="hideSub('ameriacs')">
+            <ul class="country-content">
+              <li><a href="https://www.lloyds.com/lloyds-around-the-world/americas/argentina">Argentina</a></li>
+              <li><a href="https://www.lloyds.com/lloyds-around-the-world/americas/brazil-em-portugues">Brazil</a></li>
+              <li><a href="https://www.lloyds.com/lloyds-around-the-world/americas/canada-french-version">Canada</a></li>
+              <li><a href="https://www.lloyds.com/lloyds-around-the-world/americas/colombia_esp">Colombia</a></li>
+              <li><a href="https://www.lloyds.com/lloyds-around-the-world/americas/mexico">Mexico</a></li>
+              <li><a href="https://www.lloyds.com/lloyds-around-the-world/americas/us-homepage">United States of America</a></li>
+            </ul>
+          </div>
+    
+          <!--ASIA add class to be shown /hidden with changeinnerhtml()-->
+          <div id="asia" onmouseover="showSub('asia')" onmouseout="hideSub('asia')">
+            <ul class="country-content">
+              <li><a href="https://www.lloyds.com/lloyds-around-the-world/australasia/australia">Australia</a></li>
+              <li><a href="https://www.lloyds.com/lloyds-around-the-world/asia/china">China</a></li>
+              <li><a href="https://www.lloyds.com/lloyds-around-the-world/asia/hong-kong">Hong Kong</a></li>
+              <li><a href="https://www.lloyds.com/lloyds-around-the-world/asia/india">India</a></li>
+              <li><a href="https://www.lloyds.com/lloyds-around-the-world/asia/japan">Japan</a></li>
+              <li><a href="https://www.lloyds.com/lloyds-around-the-world/australasia/new-zealand">New Zealand</a></li>
+              <li><a href="https://www.lloyds.com/lloyds-around-the-world/asia/singapore">Singapore</a></li>
+            </ul>
+          </div>
+          
+          <!--EUROPE add class to be shown /hidden with changeinnerhtml()-->
+          <div id="europe" onmouseover="showSub('europe')" onmouseout="hideSub('europe')">
+            <ul class="country-content">
+              <li><a href="https://www.lloyds.com/lloyds-around-the-world/europe/osterreich-auf-deutsch">Austria</a></li>
+              <li><a href="https://www.lloyds.com/redirect-pages/brussels">Brussels European HQ</a></li>
+              <li><a href="https://www.lloyds.com/lloyds-around-the-world/europe/nordics">Denmark</a></li>
+              <li><a href="https://www.lloyds.com/lloyds-around-the-world/europe/le-lloyds-en-france">France</a></li>
+              <li><a href="https://www.lloyds.com/lloyds-around-the-world/europe/deutschland">Germany</a></li>
+              <li><a href="https://www.lloyds.com/lloyds-around-the-world/europe/israel">Israel</a></li>
+              <li><a href="https://www.lloyds.com/lloyds-around-the-world/europe/italia">Italy</a></li>
+              <li><a href="https://www.lloyds.com/lloyds-around-the-world/europe/lithuania">Lithuania</a></li>
+              <li><a href="https://www.lloyds.com/lloyds-around-the-world/europe/malta">Malta</a></li>
+              <li><a href="https://www.lloyds.com/lloyds-around-the-world/europe/nederland">Netherlands</a></li>
+              <li><a href="https://www.lloyds.com/lloyds-around-the-world/europe/nordics">Norway</a></li>
+              <li><a href="https://www.lloyds.com/lloyds-around-the-world/europe/polska">Poland</a></li>
+              <li><a href="https://www.lloyds.com/lloyds-around-the-world/europe/espana">Spain</a></li>
+              <li><a href="https://www.lloyds.com/lloyds-around-the-world/europe/nordics">Sweden</a></li>
+              <li><a href="https://www.lloyds.com/lloyds-around-the-world/europe/die-schweiz-auf-deutsch">Switzerland</a></li>
+              <li><a href="https://www.lloyds.com/lloyds-around-the-world/europe/uk">United Kingdom</a></li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+      
+    <!-- __________ END navigation __________ -->
+
+    <!-- __________ START header __________ -->
+    <header>
+      <div class="content-width">
+        <!-- Breadcrumbs-->
+        <ul class="breadcrumbs">
+          <li><a href="https://www.lloyds.com/news-and-risk-insight/risk-reports" title="Risk Reports">Risk Reports</a></li>
+          <li><a href="https://www.lloyds.com/news-and-risk-insight/risk-reports/library/technology" title="Technology">Technology</a></li>
+        </ul> 
+        <h1>Taking control</h1>
+        <p class="subtitle">How artificial intelligence and robots create new risks and opportunities for insurance and society</p>
+        <div id="share-box"> <!-- Toggle Share options-->
+          <p><span id="share-link" onclick="showShareIcons();styleBlackSocialBox();">Share</span></p>
+          <div id="header-social-nav" class="showShareItems">
+            <ul class="header-social-ul">
+              <li><a href="https://twitter.com/LloydsofLondon"><img class="social-icon" src="assets/icons/iconmonstr-twitter-2-48.png" /></a></li>
+              <li><a href="http://www.linkedin.com/company/lloyd%27s-of-london"><img class="social-icon" src="assets/icons/iconmonstr-linkedin-2-48.png" /></a></li>
+              <li><a href="https://www.facebook.com/lloyds"><img class="social-icon" src="assets/icons/iconmonstr-facebook-2-48.png" /></a></li>
+              <li><a href="mailto:?subject=Taking-control&body=https%3a%2f%2fwww.lloyds.com%3a443%2fnews-and-risk-insight%2frisk-reports%2flibrary%2ftechnology%2ftaking-control"><img class="social-icon" src="assets/icons/emailicon.png" /></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- __________ END header __________ -->
+
+    <!-- __________ START main content __________ -->
+    <main>
+      <div class="content-width">
+        <p>As the world becomes increasingly automated, it is forcing underwriters to adapt and navigate a new risk environment. Meanwhile insurers are leveraging the potential of AI themselves to remain competitive, improve processes and increase efficiency. Lloyd’s have commissioned two reports in collaboration with the University of Surrey that explore these trends in more detail.</p>
+        <p>“Taking control: artificial intelligence and insurance” analyses the associated risks of AI implementation as well as the potential for AI to help insurers improve their operations and develop new products. Building on this, “Taking control: robots and risk” investigates the impact “collaborative robots” (or cobots) on the economy, and the subsequent risks implications for the insurance industry.</p>
+        <!-- first download box -->
+        <div class="download-box">
+          <img src="assets/img/Taking_control_thumb.png" alt="Taking control: Artificial intelligence and Insurance thumbnail" />
+          <div class="text-box">
+            <h2>Taking control: artificial intelligence and insurance</h2>
+            <p>This report identifies four risks areas for AI: trust and transparency, ethics, security and safety. It highlights that as artificial intelligence systems become more complex, cyber breaches are likely to have an even greater impact. The report also explores new business opportunities for insurers from developing new products for companies using the AI to applying the technology to improve insurance processes and deliver better value.</p>
+            <p class="download-p"><a href="https://www.lloyds.com/~/media/files/news-and-insight/risk-insight/2019/aireport_2019_final_pdf.pdf" class="download">Download</a></p>
+          </div>
+        </div>
+        <!-- second download box -->
+        <div class="download-box">
+          <img src="assets/img/Robots_Thumbnail.png" alt="Taking control: robots and risk thumbnail" />
+          <div class="text-box">
+            <h2>Taking control: robots and risk</h2>
+            <p>In the future millions of jobs could be taken over by increasingly sophisticated robots or cobots (“collaborative robots”), according to various predictions. This report explores robotics potential to significantly change the risk landscape in many parts of the economy, including: manufacturing, agriculture, healthcare and retail. It also explores the opportunity for insurers to collaborate with clients as data from cobots will provide a much greater understanding of risk and offer opportunities for improved risks and pricing models. </p>
+            <p class="download-p"><a href="https://www.lloyds.com/~/media/files/news-and-insight/risk-insight/2019/robotics_2019_final_pdf.pdf" class="download">Download</a></p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- __________ END main content __________ -->
+    
+    <!-- __________ START footer __________ -->
+    <footer>
+      <div class="content-width">
+        <ul class="footer-nav">
+          <li class="footer-li"><a class="footer-link" href="https://www.lloyds.com/common/privacy-notices">Privacy</a></li>
+          <li class="footer-li"><a class="footer-link" href="https://www.lloyds.com/common/cookies-policy">Cookies</a></li>
+          <li class="footer-li"><a class="footer-link" href="https://www.lloyds.com/common/terms-and-conditions">Terms & Conditions</a></li>
+          <li class="footer-li"><a class="footer-link" href="https://www.lloyds.com/modernslaverystatement">Modern Slavery Act</a></li>
+          <li class="footer-li"><a class="footer-link" href="https://www.lloyds.com/help-and-glossary">Help</a></li>
+          <li class="footer-li"><a class="footer-link" href="https://www.lloyds.com/contact-us">Contact</a></li>
+        </ul>
+        <ul class="social-nav">
+          <li><a href="https://twitter.com/LloydsofLondon"><img class="social-icon" src="assets/icons/iconmonstr-twitter-2-48.png" /></a></li>
+          <li><a href="http://www.linkedin.com/company/lloyd%27s-of-london"><img class="social-icon" src="assets/icons/iconmonstr-linkedin-2-48.png" /></a></li>
+          <li><a href="https://www.facebook.com/lloyds"><img class="social-icon" src="assets/icons/iconmonstr-facebook-2-48.png" /></a></li>
+          <li><a href="http://www.youtube.com/user/Lloydsinsurance"><img class="social-icon" src="assets/icons/iconmonstr-youtube-2-48.png" /></a></li>
+        </ul>
+        <p>Lloyd's Copyright 2019</p>
+        <p>Lloyd's is a registered trademark of the Society of Lloyd's. Lloyd's is authorised under the Financial Services and Markets Act 2000.</p>
+      </div>
+    </footer>
+    <!-- __________ END footer __________ -->
+    
+    <script src="script.js"></script>
+  </body>
+</html>

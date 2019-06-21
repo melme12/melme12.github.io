@@ -1,0 +1,139 @@
+body {
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+h1 {
+  font-family: "Roboto", Helvetica, sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  margin-left: 0;
+  padding-left: 0;
+  color: $lightblack;
+}
+
+h2 {
+  font-family: "Roboto", Helvetica, sans-serif;
+  font-weight: 700;
+  color: $lightblack;
+}
+
+.logo {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  letter-spacing: -1px;
+  background-color: black;
+  font-family: 'Times New Roman', Times, serif;
+  vertical-align: middle;
+  padding: 10px;
+  height: 41px;
+}
+
+.breadcrumbs li a {
+  color: gray;
+  text-decoration: none;
+}
+
+.subtitle {
+  font-size: 13px;
+}
+
+//Share Icon and Box
+#share-link {
+  color: $blue;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.footer-link {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+#sub-menu-1 {
+  a {
+    color: black;
+    text-decoration: none;
+  }
+}
+
+.gray-li {
+  a {
+    color: black;
+    text-decoration: none;
+  }
+}
+
+.white-li {
+  a {
+    color: black;
+    text-decoration: none;
+  }
+}
+
+.lightblue-li {
+  font-size: 14px;
+  font-weight: 700;
+  color: black;
+}
+
+@media screen and (min-width: 481px) {
+  h1 {
+    font-size: 47px;
+  }
+
+  .subtitle {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 1041px) {
+  h2 {
+    margin-top: 0;
+  }
+
+  #top-desktop-nav {
+    font-size: 12px;
+    text-decoration: none;
+
+    a {
+      color: #111111;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .hover-sub-nav {
+    
+    a {
+      text-decoration: none;
+      color: black;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .hover-last-sub-nav {
+
+    a {
+      text-decoration: none;
+      color: black;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+}

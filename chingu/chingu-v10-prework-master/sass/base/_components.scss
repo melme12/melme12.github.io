@@ -1,0 +1,57 @@
+.download {
+  display: inline;
+  background-color: $blue;
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
+  padding: 20px 15px;
+  border: none;
+}
+
+.menu-icon {
+  width: 25px;
+  height: 25px;
+}
+
+.menu-icon:hover {
+  cursor: pointer;
+}
+
+.plus-icon {
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin: 15px;
+}
+
+
+.bg-plus {
+  background-image: url('assets/icons/iconmonstr-plus-2-24.png');
+}
+
+.bg-cross {
+  background-image: url('assets/icons/iconmonstr-x-mark-2-24.png');
+}
+
+#icon1,
+#icon2,
+#icon3,
+#icon4,
+#icon5 {
+  height: 48px;
+  width: 48px;
+  background-size: 16px;
+  background-position: 15px 15px;
+  background-repeat: no-repeat;
+}
+
+
+#showSub1imgCross {
+  display: none;
+}
+
+.social-icon {
+  width: 25px;
+  height: 25px;
+  background-color: white;
+}

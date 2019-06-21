@@ -1,0 +1,145 @@
+.toggle-on-mobile {
+  display: none;
+}
+
+// Wrapper for logo and top nav
+.mobile-nav-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: $content-width;
+  padding: 0 15px 25px 15px;
+}
+
+// Login, Search and Hamburger
+.mobile-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    display: inline;
+    padding-left: 10px;
+  }
+}
+
+// Main Navigation toggled with Hamburger
+#main-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.show, 
+.show1, 
+.show2, 
+.show3, 
+.show4, 
+.show5 {
+  display: none;
+}
+
+#sub-menu-1, 
+#sub-menu-2, 
+#sub-menu-3, 
+#sub-menu-4, 
+#sub-menu-5 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+// 2. Level Navigation with blue bg
+#blue-grey-li-1,
+#blue-grey-li-2,
+#blue-grey-li-3,
+#blue-grey-li-4,
+#blue-grey-li-5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+     -ms-flex-align: center;
+        align-items: center;
+  -webkit-box-pack: justify;
+     -ms-flex-pack: justify;
+   justify-content: space-between;
+  // background-color: $darkblue;
+  border-bottom: 1px solid white;
+  
+  a {
+    display: block;
+    width: 100%;
+    padding: 15px 0 15px 15px;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  
+  span {
+    cursor: pointer;
+  }
+}
+
+.blue-li-active {
+  background-color: #dfe0e6;
+  
+  a{
+    color: $darkblue;
+  }
+}
+
+.blue-li-inactive {
+  background-color: $darkblue;
+  
+  a {
+    color: white;
+  }
+}
+
+.gray-li {
+  display: block;
+  height: 47px;
+  background-color: #dfe0e6;
+  border-bottom: 1px solid white;
+
+  background-image: url("assets/icons/iconmonstr-angel-right-thin-16.png");
+  background-position: 20px 15px;
+  background-repeat: no-repeat;
+  background-size: 16px;
+
+  a {
+    padding: 13px 10px 13px 45px;
+    display: block;
+  }
+}
+
+.white-li {
+  display: block;
+  background-color: white;
+  border-bottom: 1px solid #e6e6e6;
+  height: 47px;
+
+  a {
+    display: block;
+    padding: 15px;
+  }
+}
+
+.lightblue-li {
+  background-color: #d6d9ef;
+  border-bottom: 1px solid white;
+  display: block;
+  padding: 15px;
+}
