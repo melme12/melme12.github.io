@@ -1,5 +1,8 @@
 @media screen and (min-width: 1041px) {
-  /* top menu shows and desktop view is achieved */
+  .desktop-menu {
+    display: block;
+  }
+
   .toggle-on-mobile {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -220,14 +223,10 @@
     -webkit-box-pack: left;
        -ms-flex-pack: left;
      justify-content: left;
-     //FLEX-DIRECTION ROW
         -webkit-box-orient: horizontal;
      -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    //HEIGHT
-    height: 254px;
-
   }
 
   .hover-last-sub-nav{

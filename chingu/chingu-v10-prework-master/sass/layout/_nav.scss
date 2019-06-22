@@ -1,8 +1,16 @@
+
+.show-main-menu {
+  display: none;
+}
+
 .toggle-on-mobile {
   display: none;
 }
 
-// Wrapper for logo and top nav
+.desktop-menu {
+  display: none;
+}
+
 .mobile-nav-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -22,7 +30,6 @@
   padding: 0 15px 25px 15px;
 }
 
-// Login, Search and Hamburger
 .mobile-nav {
   margin: 0;
   padding: 0;
@@ -34,7 +41,6 @@
   }
 }
 
-// Main Navigation toggled with Hamburger
 #main-menu {
   margin: 0;
   padding: 0;
@@ -60,12 +66,8 @@
   list-style: none;
 }
 
-// 2. Level Navigation with blue bg
-#blue-grey-li-1,
-#blue-grey-li-2,
-#blue-grey-li-3,
-#blue-grey-li-4,
-#blue-grey-li-5 {
+.blue-li-active {
+  background-color: #dfe0e6;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -75,10 +77,10 @@
   -webkit-box-pack: justify;
      -ms-flex-pack: justify;
    justify-content: space-between;
-  // background-color: $darkblue;
   border-bottom: 1px solid white;
   
-  a {
+  a{
+    color: $darkblue;
     display: block;
     width: 100%;
     padding: 15px 0 15px 15px;
@@ -86,25 +88,37 @@
     font-weight: 700;
     text-decoration: none;
   }
-  
+
   span {
     cursor: pointer;
   }
 }
 
-.blue-li-active {
-  background-color: #dfe0e6;
-  
-  a{
-    color: $darkblue;
-  }
-}
-
 .blue-li-inactive {
   background-color: $darkblue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+     -ms-flex-align: center;
+        align-items: center;
+  -webkit-box-pack: justify;
+     -ms-flex-pack: justify;
+   justify-content: space-between;
+  border-bottom: 1px solid white;
   
   a {
     color: white;
+    display: block;
+    width: 100%;
+    padding: 15px 0 15px 15px;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  span {
+    cursor: pointer;
   }
 }
 

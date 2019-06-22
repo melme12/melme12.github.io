@@ -1,6 +1,21 @@
 # Chingu Voyage 10 Pre-Work: Solo Project (4-8 Hr)
 Solo Project for Chingu Voyage 10: Clone a Landing Page
 
+## My Notes:
+The deployed page can be seen here: [Chingu Voyage 10 Pre-Work by Melanie Althaus](https://melme12.github.io/chingu/chingu-v10-prework-master/)
+
+I started out with a mobile-first approach and aimed to complete the requirements first (you can find them below). Since this is the first time I am using JavaScript in a project, it cost me a few hours to get the submenus working as they do in the original page.
+
+Since I had some time left, I decided to create the other menues as well. I also rebuilt some JavaScript functions, which now seem to work better. I would like to find a way to include polyfills for older browsers, but that is a time issue.
+
+ ### Tools I used:
+ - GitHub Desktop
+ - VS Code
+ - [Autoprefixer CSS online](https://autoprefixer.github.io/)
+ - [W3C Markup Validation Service](https://validator.w3.org/)
+ 
+___
+
 ## Directions:
 These projects are a way for you to familiarize yourself with the concepts required for the larger eight week project.
 
@@ -20,14 +35,6 @@ Key Concepts To Learn From This Assignment:
 - Project Setup.
 - Documentation.
 - Deployment.
-
-### Which solo project do I do?
-
-In the last form, you chose your tier. You can complete the Pre-Work project associated with your chosen tier OR complete the project for the tier you are suited for. One of the main goals of the pre-work section is for you to get a sense of what tier you best fit in for the team project in the official cohort.
-
-Remember that you may not substitute another project for the ones listed below and you only have to complete the project for tier you choose, NOT all tiers.
-
-You'll be able to let us know in the Pre-Work Completion Form what your final tier choice was. The Pre-Work Completion Form will be provided near the end of the Pre-Work period.
 
 #### Solo Project Tips:
 1. It is more important to complete the project than it is to add features since completion is require before you can advance to the Voyage Project.

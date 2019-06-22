@@ -1,7 +1,8 @@
 // Show Menu with click on hamburger
+
 function showHam() {  
-    var x = document.querySelector('#main-menu');
-    x.classList.toggle('show');
+  var x = document.querySelector('#mobile-main-menu');
+  x.classList.toggle('show-main-menu');
 }
 
 // Show submenu with click on plus icon
