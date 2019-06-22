@@ -106,9 +106,8 @@ h2 {
 .menu-icon {
   width: 25px;
   height: 25px; }
-
-.menu-icon:hover {
-  cursor: pointer; }
+  .menu-icon:hover {
+    cursor: pointer; }
 
 .plus-icon {
   display: block;

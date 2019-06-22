@@ -11,10 +11,10 @@
 .menu-icon {
   width: 25px;
   height: 25px;
-}
 
-.menu-icon:hover {
-  cursor: pointer;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .plus-icon {
