@@ -46,3 +46,10 @@ footer {
     content: " | ";
   }
 }
+
+@media screen and (min-width: 1041px) {
+  .footer-width {
+    padding: 15px 0 3px 0;
+    ;
+  }
+}

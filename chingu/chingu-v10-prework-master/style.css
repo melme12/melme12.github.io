@@ -665,5 +665,8 @@ footer {
 
   .footer-li + .footer-li:before {
     content: " | "; } }
+@media screen and (min-width: 1041px) {
+  .footer-width {
+    padding: 15px 0 3px 0; } }
 
 /*# sourceMappingURL=style.css.map */
