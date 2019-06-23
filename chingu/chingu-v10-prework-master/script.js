@@ -27,11 +27,17 @@ function changeIcon(icon, listBg) {
 
 // Show Share box
 function showShareIcons() {  
-  var a = document.querySelector('#header-social-nav');
+  let a = document.querySelector('#header-social-nav');
+  let b = document.querySelector('#share-link');
   a.classList.toggle('showShareItems');
+  b.classList.toggle('share-link-icon-white');
   document.getElementById('share-link').style.background = "black";
   document.getElementById('share-link').style.color = "white";
 }
+
+// function changeSocialIcon() {
+  
+// }
 
 // Style Share box
 var color_tracker = '#f1f1f1';
