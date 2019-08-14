@@ -4,4 +4,6 @@ A landing page for a fictional event, designed and coded by [Melanie Althaus](ht
 
 Have a look at it here: https://melme12.github.io/chingu/
 
+The link to the original Chingu Project is https://github.com/chingu-voyages/v10-solo-melme12
+
 The design and topic were inspired by the beautiful landing page of [Within](https://gowithin.co/).
