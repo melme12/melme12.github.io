@@ -1,0 +1,14 @@
+.footer {
+  padding: $content-padding;
+  background-color: $black-color;
+  display: flex;
+  flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: flex-start;
+}
+
+.footer__newsletter {
+  padding-bottom: 50px;
+}

@@ -1,0 +1,48 @@
+/* COLORS */
+
+$pink-color: rgba(247, 22, 101, 1); //#F71665
+$lightpink-color: rgba(247, 110, 156, 1);
+$darkpink-color: rgba(209, 18, 85, 1);
+$mint-color: rgba(194, 231, 218, 0.61); //#C2E7DA, with transparency: #daf0e8
+$blue-color: rgba(98, 144, 195, 1); //#6290C3
+$white-color: rgba(255, 255, 255, 1); //#FFFFFF
+$black-color: rgba(0, 0, 0, 1); //#000000
+$gray-color: rgba(170, 170, 170, 1); //#AAAAAA
+$lightgray-color: rgba(209, 209, 209, 1);//#D1D1D1
+$darkgray-color: rgba(104, 104, 104, 1); //#686868
+
+/* TYPOGRAPHY */
+
+$main-font: ('Catamaran', Helvetica, sans-serif);
+$title-font: ('Playfair Display', serif);
+
+$base-font-size: 18px;
+$small-font-size: 14px;
+$medium-font-size: 24px;
+$large-font-size: 26px;
+$big-logo-size: 55px;
+
+/* BREAKPOINTS */
+
+$phone: 480px;
+$tablet-portrait: 768px;
+$tablet-landscape: 1024px;
+$desktop-small: 1280px;
+$desktop-medium: 1690px;
+$desktop-big: 1920px;
+
+/* EFFECTS */
+
+$scale-bigger: scale(1.05);
+$scale-smaller: scale(0.95);
+
+// LAYOUT
+
+$content-padding: 50px 10vw;
+
+// OTHER
+
+$mobile-screen-padding: 20px;
+
+$location-box-shadow: 0 0 10px rgba(45, 45, 45, 0.4); // #2D2D2D
+
